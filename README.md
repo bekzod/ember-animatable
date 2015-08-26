@@ -1,25 +1,21 @@
-# Ember-animatable
+# ember-animatable
 
-This README outlines the details of collaborating on this Ember addon.
+Ember Mixin which provides convenient way using [animate.css](https://daneden.github.io/animate.css/) animations in components.
 
-## Installation
+- `animate(animationType:string, animationTarget:string): promise`  
+  `animationType`: animation type `bounce`, full list can be found [here](https://github.com/daneden/animate.css)  
+  `animationTarget`: css selector `.class-name`  
+  `returns`: promise which is resolved when animation finishes  
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+```js
 
-## Running
-
-* `ember server`
-* Visit your app at http://localhost:4200.
-
-## Running Tests
-
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+  import AnimatableMixin from 'ember-animatable';
+  export default Ember.Component.extend(AnimatableMixin, {
+      click() {
+        var anim = this.animate('pulse', '.animation-target');
+        anim.then(function(){
+            console.log('animation finished')
+        });
+      }
+  });
+```
