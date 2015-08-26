@@ -11,11 +11,11 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "https://github.com/bekzod/ember-animatable",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "bekzod@me.com",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.1.2",
