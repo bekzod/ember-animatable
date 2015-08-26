@@ -8,14 +8,18 @@ Ember Mixin which provides convenient way using [animate.css](https://daneden.gi
   `returns`: promise which is resolved when animation finishes  
 
 ```js
+import AnimatableMixin from 'ember-animatable';
+export default Ember.Component.extend(AnimatableMixin, {
+    click() {
+      var anim = this.animate('pulse', '.animation-target');
+      anim.then(function(){
+          console.log('animation finished')
+      });
+    }
+});
+```
 
-  import AnimatableMixin from 'ember-animatable';
-  export default Ember.Component.extend(AnimatableMixin, {
-      click() {
-        var anim = this.animate('pulse', '.animation-target');
-        anim.then(function(){
-            console.log('animation finished')
-        });
-      }
-  });
+## Installation
+```js
+  ember install ember-animatable
 ```
