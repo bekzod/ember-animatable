@@ -4,7 +4,7 @@ Ember Mixin which provides convenient way using [animate.css](https://daneden.gi
 
 - `animate(animationType:string, animationTarget:string): promise`  
   `animationType`: animation type `bounce`, full list can be found [here](https://github.com/daneden/animate.css)  
-  `animationTarget`: css selector `.class-name` (**optional** if not provided component parent element will be target)  
+  `animationTarget`: css selector `.class-name` (**optional** if not provided component is the target)  
   `returns`: promise which is resolved when animation finishes  
 
 ```js
