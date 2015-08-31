@@ -10,7 +10,7 @@ module.exports = {
     var options = app.options['ember-animatable'] || { include: [] };
 
     var include = options.include;
-    var sourceDir = path.join(app.bowerDirectory, 'animate.css/source/');
+    var sourceDir = path.join(app.bowerDirectory, 'animate.css/source');
     var cssFiles = walkSync(sourceDir, ['**/*.css']);
 
     if (include.length){
