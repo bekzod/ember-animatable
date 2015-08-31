@@ -1,18 +1,18 @@
 import Ember from 'ember';
-const { run, RSVP } = Ember;
+const { run, RSVP, $ } = Ember;
 const TRANSITION_END_PREFIXES = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
 export default Ember.Mixin.create({
   animate(animationType, target){
-    var deferred = RSVP.defer();
+    let deferred = RSVP.defer();
     run.scheduleOnce('afterRender', this, function(){
-      var classes = 'animated ' + animationType;
+      let classes = 'animated ' + animationType;
       this.$(target)
-        .one(TRANSITION_END_PREFIXES, run.bind(this, function(){
-          this.$(target).removeClass( classes );
+        .one(TRANSITION_END_PREFIXES, run.bind(this, function(e){
+          $(e.currentTarget).removeClass(classes);
           deferred.resolve();
-        }));
-        this.$(target).addClass( classes );
+        }))
+        .addClass(classes);
     });
     return deferred.promise;
   }
