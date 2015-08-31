@@ -19,6 +19,15 @@ export default Ember.Component.extend(AnimatableMixin, {
 });
 ```
 
+## Just use what you want 
+By default addon will import all css animations provided by [animate.css](https://daneden.github.io/animate.css/), but usually you don't need all css animations so you can specify them in app config.
+
+```js
+	 'ember-animatable': {
+      include: ['pulse', 'bounceIn'] // pulse and bounceIn animation will be imported
+    }
+```
+
 ## Installation
 ```js
   ember install ember-animatable

@@ -1,3 +1,1 @@
-import AnimatableMixin from './mixins/animatable';
-
-export default AnimatableMixin;
+export { default } from './mixins/animatable';

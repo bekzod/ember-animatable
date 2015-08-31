@@ -4,6 +4,6 @@ import AnimatableMixin from 'ember-animatable';
 export default Ember.Component.extend(AnimatableMixin, {
   classNames: ['my-component'],
   click(){
-    this.animate('pulse', '.animation-target');
+    this.animate('pulse');
   }
 });

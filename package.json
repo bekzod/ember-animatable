@@ -42,7 +42,8 @@
     "css animation"
   ],
   "dependencies": {
-    "ember-cli-babel": "^5.1.3"
+    "ember-cli-babel": "^5.1.3",
+    "walk-sync": "^0.2.0"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config",

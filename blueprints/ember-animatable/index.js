@@ -1,8 +1,7 @@
 module.exports = {
-  normalizeEntityName: function() {
-  },
+  normalizeEntityName: function() {},
 
   afterInstall: function(options) {
-    return this.addBowerPackageToProject('animate-css');
+    return this.addBowerPackageToProject('animate.css');
   }
 };
