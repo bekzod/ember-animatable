@@ -1,6 +1,6 @@
 {
   "name": "ember-animatable",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "ember-animatable addon (animate.css component mixin)",
   "directories": {
     "doc": "doc",
