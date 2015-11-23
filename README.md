@@ -8,7 +8,9 @@ Ember Mixin which provides convenient way using [animate.css](https://daneden.gi
   `returns`: promise which is resolved when animation finishes  
 
 ```js
+import Ember from 'ember';
 import AnimatableMixin from 'ember-animatable';
+
 export default Ember.Component.extend(AnimatableMixin, {
     click() {
       var anim = this.animate('pulse', '.animation-target');
