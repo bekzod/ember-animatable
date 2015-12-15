@@ -14,8 +14,8 @@ import AnimatableMixin from 'ember-animatable';
 export default Ember.Component.extend(AnimatableMixin, {
     click() {
       var anim = this.animate('pulse', '.animation-target');
-      anim.then(function(){
-          console.log('animation finished')
+      anim.then(function() {
+        console.log('animation complete')
       });
     }
 });
