@@ -48,6 +48,6 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config",
-    "demoURL": "http://animatable-demo.divshot.io"
+    "demoURL": "http://animatable.surge.sh"
   }
 }
