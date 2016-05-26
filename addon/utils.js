@@ -3,7 +3,7 @@ import Ember from 'ember';
 const { run, RSVP, $ } = Ember;
 const TRANSITION_END_PREFIXES = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
-export function animate(animationType, target) {
+export function animate(target, animationType) {
   let deferred = RSVP.defer();
   run.scheduleOnce('afterRender', function(){
     let classes = 'animated ' + animationType;
