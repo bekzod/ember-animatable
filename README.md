@@ -1,5 +1,7 @@
 # ember-animatable [![Ember Observer Score](http://emberobserver.com/badges/ember-animatable.svg)](http://emberobserver.com/addons/ember-animatable) [![npm version](https://badge.fury.io/js/ember-animatable.svg)](https://badge.fury.io/js/ember-animatable)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/bekzod/ember-animatable.svg)](https://greenkeeper.io/)
+
 Ember Mixin which provides convenient way using [animate.css](https://daneden.github.io/animate.css/) animations in components. [Demo](http://animatable.surge.sh)
 ###Mixin Method
 - `animate(animationType:string, animationTarget:string): promise`  
