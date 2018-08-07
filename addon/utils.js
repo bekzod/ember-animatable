@@ -1,6 +1,6 @@
-import Ember from 'ember';
-
-const { run, RSVP, $ } = Ember;
+import { run } from '@ember/runloop';
+import RSVP from 'rsvp';
+import $ from 'jquery';
 const TRANSITION_END_PREFIXES = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
 export function animate(target, animationType) {

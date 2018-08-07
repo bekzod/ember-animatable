@@ -1,7 +1,7 @@
-import Ember from 'ember';
+import Component from '@ember/component';
 import AnimatableMixin from 'ember-animatable';
 
-export default Ember.Component.extend(AnimatableMixin, {
+export default Component.extend(AnimatableMixin, {
   classNames: ['my-component'],
   click(){
     this.animate('pulse');

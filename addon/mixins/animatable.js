@@ -1,7 +1,7 @@
-import Ember from 'ember';
+import Mixin from '@ember/object/mixin';
 import { animate } from '../utils';
 
-export default Ember.Mixin.create({
+export default Mixin.create({
   animate(animationType, target) {
     return animate(this.$(target), animationType);
   }
